@@ -14,6 +14,8 @@ import os
 import django_heroku
 
 
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -27,12 +29,14 @@ SECRET_KEY = 'a_sgw7^4&vhc0)guovb_$ndjim7rfmj&1vf9xf1kb%)#@_&$(='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+ALLOWED_HOSTS = ['https://cp-movie.herokuapp.com',
 
-ALLOWED_HOSTS = [‘https://cp-movie-app.herokuapp.com',
+'localhost',
 
-‘localhost’,
+'127.0.0.1']
 
-‘127.0.0.1’]
+
+
 
 
 ALLOWED_HOSTS = ['*']
@@ -133,6 +137,6 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-
-#heroku acitvate Django Heroku
+#heroku activate Django Heroku
 django_heroku.settings(locals())
+
