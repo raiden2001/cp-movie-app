@@ -14,7 +14,7 @@ lazy-object-proxy==1.4.3
 llvmlite==0.29.0
 locket==0.2.0
 mccabe==0.6.1
-menuinst==1.4.16
+ 
 mpmath==1.1.0
 psycopg2==2.8.6
 pycodestyle==2.5.0
